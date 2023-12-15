@@ -1,4 +1,4 @@
-import TeaBlends from "./FavoriteTeas";
+import TeaBlends from "./TeaBlends";
 import { useState, useEffect } from "react";
 
 const getTeas = async () => {
@@ -24,10 +24,8 @@ const TeaBlendsContainer = () => {
         });
     }, []);
     return (
-        <div className="container">
-            <div className="row row-gap-4">
-				{teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => <TeaBlends tea={tea} />)}
-			</div>
+        <div className="col">
+            {teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => <TeaBlends tea={tea} />)}
         </div>
     )
 }

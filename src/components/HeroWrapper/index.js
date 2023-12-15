@@ -1,6 +1,6 @@
 const HeroWrapper = (props) => {
     return (
-        <div className="hero-wrapper">
+        <div className="hero-wrapper row">
             {props.children}
         </div>
     );

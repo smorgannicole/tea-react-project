@@ -2,7 +2,9 @@ import React from 'react';
 import Header from './components/Header';
 import "./App.css";
 import HeroWrapper from './components/HeroWrapper';
-import TeaBlendsContainer from './components/FavoriteTeasContainer';
+import TeaBlendsContainer from './components/TeaBlendsContainer';
+import FavoriteTeasContainer from './components/HeroWrapper/FavoriteTeasContainer';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <HeroWrapper>
         <Header />
         <TeaBlendsContainer />
+        <FavoriteTeasContainer />
       </HeroWrapper>
     </div>
   );
