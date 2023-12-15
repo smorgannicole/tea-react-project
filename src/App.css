@@ -1,0 +1,23 @@
+@import url("~bootstrap/dist/css/bootstrap.min.css") layer(framework);
+
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: #B77960;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img.header-logo {
+    max-height: 100px;
+}
+
+.hero-wrapper {
+    background-color: #F6F1DB;
+    height: 80dvh;
+}
