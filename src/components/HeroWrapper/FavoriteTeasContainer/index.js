@@ -1,7 +1,9 @@
+import FavoriteTeas from "./FavoriteTeas";
+
 const FavoriteTeasContainer = () => {
     return (
         <div className="col">
-            <span>Favorite Teas Container</span>
+            <FavoriteTeas/>
         </div>
     );
 }
