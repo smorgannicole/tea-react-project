@@ -19,5 +19,8 @@ img.header-logo {
 
 .hero-wrapper {
     background-color: #F6F1DB;
-    height: 80dvh;
+    position: relative;
+    height: 100%;
+    width: 70%;
+    margin: 18vh auto;
 }

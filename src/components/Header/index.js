@@ -1,5 +1,5 @@
 import MenuItem from "./components/MenuItem";
-import headerLogo from "../Header/components/images/tea-logo.png"
+import headerLogo from "../Header/components/images/misty-tea-logo.png"
 
 const Header = () => {
     return (
