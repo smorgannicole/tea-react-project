@@ -1,8 +1,8 @@
-import headerLogo from "../Header/components/images/misty-tea-logo.png"
+import headerLogo from "../Main/components/images/misty-tea-logo.png"
 import { useState, useEffect } from "react";
-import TeaBlends from "../HeroWrapper/TeaBlends";
+import TeaBlends from "./components/TeaBlends";
 
-const Header = () => {
+const Main = () => {
 
     const [toggleState, setToggleState] = useState(0);
     const toggleTab = (index) => {
@@ -65,4 +65,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default Main;

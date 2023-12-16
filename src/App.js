@@ -1,17 +1,17 @@
 import React from 'react';
-import Header from './components/Header';
+import Main from './components/Main';
 import "./App.css";
-import HeroWrapper from './components/HeroWrapper';
-import FavoriteTeasContainer from './components/HeroWrapper/FavoriteTeasContainer';
+import MainWrapper from './components/MainWrapper';
+import FavoriteTeasContainer from './components/Main/components/FavoriteTeasContainer';
 
 
 function App() {
   return (
     <div className="app-wrapper">
-      <HeroWrapper>
-        <Header />
+      <MainWrapper>
+        <Main />
         <FavoriteTeasContainer />
-      </HeroWrapper>
+      </MainWrapper>
     </div>
   );
 }
