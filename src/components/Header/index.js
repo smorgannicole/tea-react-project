@@ -1,21 +1,6 @@
 import headerLogo from "../Header/components/images/misty-tea-logo.png"
 import { useState, useEffect } from "react";
-import TeaBlends from "./components/TeaBlends";
-
-const getTeas = async () => {
-	const url = `https://boonakitea.cyclic.app/api/all`;
-	const options = {
-		method: "GET",
-		redirect: "follow",
-	};
-	try {
-		const response = await fetch(url, options);
-		const data = await response.json();
-		return data;
-	} catch (error) {
-		console.log(error);
-	}
-};
+import TeaBlends from "../HeroWrapper/TeaBlends";
 
 const Header = () => {
 
@@ -30,6 +15,21 @@ const Header = () => {
             setTeas(teas);
         });
     }, []);
+
+    const getTeas = async () => {
+        const url = `https://boonakitea.cyclic.app/api/all`;
+        const options = {
+            method: "GET",
+            redirect: "follow",
+        };
+        try {
+            const response = await fetch(url, options);
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
     return (
         <header className='container-fluid'>
