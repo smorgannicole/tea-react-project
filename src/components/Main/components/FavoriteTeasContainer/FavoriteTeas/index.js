@@ -23,7 +23,7 @@ const FavoriteTeas = () => {
     ];
 
     return (
-        <div>
+        <div className="col">
             {favoriteTeas.map((favoriteTea) => (
                 <FavoriteTea text={favoriteTea.name} />))}
         </div>

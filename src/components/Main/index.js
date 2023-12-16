@@ -36,7 +36,7 @@ const Main = () => {
         <header className='col-8'>
             <div className="row">
                 <div className='col-3'>
-                    <img className="header-logo" src={headerLogo} />
+                    <img className="header-logo" onClick={() => toggleTab(0)} src={headerLogo} />
                 </div>
                 <nav className='col d-flex align-items-center justify-content-end block-tabs gap-4'>
                     <div className={toggleState === 0 ? "tab active-tab" : "tab"} onClick={() => toggleTab(0)}>Home</div>
