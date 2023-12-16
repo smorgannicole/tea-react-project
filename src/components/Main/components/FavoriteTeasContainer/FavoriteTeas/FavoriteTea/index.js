@@ -1,6 +1,6 @@
 const FavoriteTea = (props) => {
     return (
-        <div>{props.text}</div>
+        <div>{props.text}{props.img}</div>
     );
 }
 
