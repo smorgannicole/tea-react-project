@@ -30,7 +30,7 @@ img.header-logo {
 }
 
 .active-tab {
-    background-color: #fff;
+    background-color: #F6F1DB;
 }
 
 .active-tab::before {
@@ -42,7 +42,6 @@ img.header-logo {
     transform: translateX(-50%);
     width: calc(100% + 2px);
     height: 5px;
-    background: rgb(88, 147, 241);
 }
 
 .content {
@@ -50,7 +49,7 @@ img.header-logo {
     height: 100%;
     width: 100%;
     padding: 20px;
-    background-color: #fff;
+    background-color: #F6F1DB;
 }
 
 .active-content {
