@@ -24,3 +24,35 @@ img.header-logo {
     width: 70%;
     margin: 18vh auto;
 }
+
+.favTeasCol {
+    background-color: #818C6C;
+}
+
+.active-tab {
+    background-color: #fff;
+}
+
+.active-tab::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: rgb(88, 147, 241);
+}
+
+.content {
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.active-content {
+    display: block;
+}
