@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
+    color: #535D3F;
     background-color: #B77960;
 }
 
@@ -21,16 +22,20 @@ img.header-logo {
     background-color: #F6F1DB;
     position: relative;
     height: 100%;
-    width: 70%;
-    margin: 18vh auto;
+    width: 95%;
+    margin: 5vh auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3), 8px 0 8px -3px rgba(0, 0, 0, 0.3), 0 -4px 8px -3px rgba(0, 0, 0, 0.3), -8px 0 8px -3px rgba(0, 0, 0, 0.3);
 }
 
 .favTeasCol {
     background-color: #818C6C;
+    border-bottom-right-radius: 20px;
 }
 
 .active-tab {
     background-color: #F6F1DB;
+    cursor: pointer;
 }
 
 .active-tab::before {
@@ -42,6 +47,10 @@ img.header-logo {
     transform: translateX(-50%);
     width: calc(100% + 2px);
     height: 5px;
+}
+
+.tab {
+    cursor: pointer;
 }
 
 .content {
