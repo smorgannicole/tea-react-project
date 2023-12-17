@@ -10,30 +10,30 @@ const FavoriteTeas = () => {
     const favoriteTeas = [
         {
             name: "Matcha Tea",
-            image: <img className="fav-tea" src={matchaImg} />,
+            image: <img className="fav-tea" src={matchaImg} alt="tea" />,
         },
         {
             name: "White Tea",
-            image: <img className="fav-tea" src={whiteTeaImg} />,
+            image: <img className="fav-tea" src={whiteTeaImg} alt="tea" />,
         },
         {
             name: "Wulong (oolong) Tea",
-            image: <img className="fav-tea" src={oolongImg} />,
+            image: <img className="fav-tea" src={oolongImg} alt="tea" />,
         },
         {
             name: "Jasmine Dragon Pearl",
-            image: <img className="fav-tea" src={jasmineImg} />,
+            image: <img className="fav-tea" src={jasmineImg}alt="tea" />,
         },
         {
             name: "Earl Grey",
-            image: <img className="fav-tea" src={earlGreyImg} />,
+            image: <img className="fav-tea" src={earlGreyImg} alt="tea" />,
         },
         {
             name: "English Breakfast Tea",
-            image: <img className="fav-tea" src={englishImg} />,
+            image: <img className="fav-tea" src={englishImg} alt="tea" />,
         },
     ];
-
+//carousel-item next to col
     return (
         <div className="col">
             {favoriteTeas.map((favoriteTea) => (

@@ -2,8 +2,10 @@ import FavoriteTeas from "./FavoriteTeas";
 
 const FavoriteTeasContainer = () => {
     return (
-        <div className="col favTeasCol">
-            <FavoriteTeas/>
+        <div className="carousel col favTeasCol">
+            <div className="inner">
+                <FavoriteTeas/>
+            </div>
         </div>
     );
 }
