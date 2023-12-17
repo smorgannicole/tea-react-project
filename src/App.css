@@ -72,3 +72,48 @@ img.fav-tea {
     width: 100%;
     object-fit: cover;
 }
+
+.carousel {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner {
+    transition: transform 0.3s;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.indicators {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.indicator-buttons {
+    border: none;
+    cursor: pointer;
+}
+
+.indicator-symbol {
+    color: #26343f;
+}
+
+.indicator-symbol-active {
+    color: #fff;
+}
+
+.indicators > button {
+    background: none;
+}
