@@ -47,37 +47,38 @@ const FavoriteTeas = () => {
 
     return (
         <div className="col">
+            <div id="carouselExample" className="carousel slide">
+                <div className="carousel-inner">
+                    {favoriteTeas.map((favoriteTea, index) => (
+                        <div className={`carousel-item ${
+                            index === 0 ? 
+                            'active' : ''}`}
+                            key={index}>
+                            <FavoriteTea text={favoriteTea.name} img={favoriteTea.image} />
+                        </div>
+                    ))}
+                </div>
+                <button
+                    className="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button
+                    className="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div>
+                <h3 style={{color:"white", fontWeight: "lighter"}}>socials</h3>
 
-<div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
-      <div className="carousel-inner">
-        {favoriteTeas.map((favoriteTea, index) => (
-          <div
-            className={`carousel-item ${index === 0 ? 'active' : ''}`}
-            key={index}
-          >
-            <FavoriteTea text={favoriteTea.name} img={favoriteTea.image} />
-          </div>
-        ))}
-      </div>
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
-    </div>
+            </div>
         </div>
     );
 }
