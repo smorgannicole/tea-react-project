@@ -43,11 +43,11 @@ const FavoriteTeas = () => {
         }
         setActiveIndex(newIndex);
     }
-//carousel-item next to col
+
     return (
         <div className="col">
             <div className="inner"
-                    style={{transform: `translate:(-${activeIndex * 100}%)`}}>
+                    style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
                 {favoriteTeas.map((favoriteTea) => (
                     <FavoriteTea text={favoriteTea.name} img={favoriteTea.image} />))}
             </div>
@@ -55,7 +55,7 @@ const FavoriteTeas = () => {
                 <button onClick={()=> {
                     updateIndex(activeIndex - 1);
                 }} className="button-arrow">
-                    <span class="material-symbols-outlined">arrow_back_ios</span>
+                    <span className="material-symbols-outlined">arrow_back_ios</span>
                 </button>
                 <div className="indicators">
                     {favoriteTeas.map((favoriteTea, index) => {
