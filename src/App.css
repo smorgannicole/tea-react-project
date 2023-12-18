@@ -117,3 +117,8 @@ img.fav-tea {
 .indicators > button {
     background: none;
 }
+
+.carousel-item img {
+    display: block;
+  margin: 0 auto;
+  }

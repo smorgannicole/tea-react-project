@@ -6,6 +6,7 @@ import oolongImg from "../../images/oolong.png"
 import earlGreyImg from "../../images/earl-grey.png"
 import englishImg from "../../images/english-breakfast.png"
 import { useState } from "react";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const FavoriteTeas = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -46,34 +47,37 @@ const FavoriteTeas = () => {
 
     return (
         <div className="col">
-            <div className="inner"
-                    style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
-                {favoriteTeas.map((favoriteTea) => (
-                    <FavoriteTea text={favoriteTea.name} img={favoriteTea.image} />))}
-            </div>
-            <div className="carousel-buttons">
-                <button onClick={()=> {
-                    updateIndex(activeIndex - 1);
-                }} className="button-arrow">
-                    <span className="material-symbols-outlined">arrow_back_ios</span>
-                </button>
-                <div className="indicators">
-                    {favoriteTeas.map((favoriteTea, index) => {
-                        return (
-                            <button onClick={()=> {
-                                updateIndex(index);
-                            }} className="indicator-buttons">
-                                <span className={`material-symbols-outlined ${index === activeIndex? "indicator-symbol-active" : "indicator-symbol"}`}>radio_button_checked</span>
-                            </button>
-                        );
-                    })}
-                </div>
-                <button onClick={()=> {
-                    updateIndex(activeIndex + 1);
-                }} className="button-arrow">
-                    <span class="material-symbols-outlined">arrow_forward_ios</span>
-                </button>
-            </div>
+
+<div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
+      <div className="carousel-inner">
+        {favoriteTeas.map((favoriteTea, index) => (
+          <div
+            className={`carousel-item ${index === 0 ? 'active' : ''}`}
+            key={index}
+          >
+            <FavoriteTea text={favoriteTea.name} img={favoriteTea.image} />
+          </div>
+        ))}
+      </div>
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
+        className="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
         </div>
     );
 }
