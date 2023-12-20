@@ -73,9 +73,19 @@ img.fav-tea {
     object-fit: cover;
 }
 
+ul {
+    list-style-type: none;
+}
+
 img.social-icons {
-    max-height: 30px;
-    max-width: 30px;
+    height: auto;
+    max-width: 30%;
     cursor: pointer;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+a.a-social-icons {
+    justify-content: end;
 }
 

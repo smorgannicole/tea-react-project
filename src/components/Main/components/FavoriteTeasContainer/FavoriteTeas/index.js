@@ -81,11 +81,29 @@ const FavoriteTeas = () => {
             </div>
             <div>
                 <hr style={{color:"white"}}></hr>
-                <div className="row">
-                    <div className="col"><img src={instaIcon} className="social-icons" alt="instagram icon"/></div>
-                    <div className="col"><img src={xIcon} className="social-icons" alt="x icon"/></div>
-                    <div className="col"><img src={facebookIcon} className="social-icons" alt="facebook icon"/></div>
-                    <div className="col"><img src={youtubeIcon} className="social-icons" alt="youtube icon"/></div>
+                <div className="col d-flex">
+                    <ul className="d-flex">
+                        <li className="d-flex align-items-center">
+                            <a href="#" target="_blank" className="d-flex a-social-icons">
+                                <img src={instaIcon} alt="instagram icon" className="social-icons" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" className="d-flex a-social-icons">
+                                <img src={xIcon} alt="x icon" className="social-icons" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" className="d-flex a-social-icons">
+                                <img src={facebookIcon} alt="facebook icon" className="social-icons" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" className="d-flex a-social-icons">
+                                <img src={youtubeIcon} alt="youtube icon" className="social-icons" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
