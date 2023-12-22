@@ -37,15 +37,14 @@ const Main = () => {
         const updatedTeas = [...teas, newTea];
         setTeas(updatedTeas);
         localStorage.setItem('teasData', JSON.stringify(updatedTeas));
-
     };
 
     useEffect(() => {
         const storedTeas = JSON.parse(localStorage.getItem('teasData'));
         if (storedTeas) {
-          setTeas(storedTeas);
+          setTeas([...storedTeas]);
         }
-      }, []);
+    }, []);
 
     return (
         <header className='col-8'>
