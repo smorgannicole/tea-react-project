@@ -2,6 +2,7 @@ import headerLogo from "../Main/components/images/misty-tea-logo.png"
 import { useState, useEffect } from "react";
 import TeaBlends from "./components/TeaBlends";
 import LeftSideMain from "./components/LeftSideMain";
+import CreateYourOwn from "./components/CreateYourOwn";
 
 const Main = () => {
 
@@ -57,7 +58,7 @@ const Main = () => {
                 </div>
                 <div className={toggleState === 2 ? "content active-content" : "content"}>
                     <h2>Create Your Own</h2>
-                    <p>lorem</p>
+                    <CreateYourOwn />
                 </div>
                 <div className={toggleState === 3 ? "content active-content" : "content"}>
                     <h2>About Us</h2>
