@@ -19,9 +19,9 @@ const CreateYourOwn = ({ addTea }) => {
     return (
         <div className="col">
             <form id="add-form">
-                <h3><label className="form-label" for="add-name">Tea Name</label></h3>
+                <h3><label className="form-label" htmlFor="add-name">Tea Name</label></h3>
                 <input className="form-control" type="text" name="name" id="add-name" placeholder="Create Tea Name" value={newTea.name} onChange={handleInputChange} />
-                <h3><label className="form-label" for="add-description">Tea Description</label></h3>
+                <h3><label className="form-label" htmlFor="add-description">Tea Description</label></h3>
                 <input className="form-control" type="text" name="description" id="add-description" placeholder="Create Tea Description" value={newTea.description} onChange={handleInputChange} />
                 <div>
                 <button onClick={handleAddTea} className="btn btn-outline-success add" data-add>Create Tea</button>
