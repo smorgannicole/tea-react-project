@@ -33,6 +33,10 @@ const Main = () => {
         }
     };
 
+    const addNewTea = (newTea) => {
+        setTeas([...teas, newTea]);
+      };
+
     return (
         <header className='col-8'>
             <div className="row">
@@ -58,7 +62,7 @@ const Main = () => {
                 </div>
                 <div className={toggleState === 2 ? "content active-content" : "content"}>
                     <h2>Create Your Own</h2>
-                    <CreateYourOwn />
+                    <CreateYourOwn addTea={addNewTea} />
                 </div>
                 <div className={toggleState === 3 ? "content active-content" : "content"}>
                     <h2>About Us</h2>
