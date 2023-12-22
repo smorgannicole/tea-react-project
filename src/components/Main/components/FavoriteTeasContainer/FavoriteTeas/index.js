@@ -83,7 +83,7 @@ const FavoriteTeas = () => {
                 <hr style={{color:"white"}}></hr>
                 <div className="col d-flex">
                     <ul className="d-flex">
-                        <li className="d-flex align-items-center">
+                        <li>
                             <a href="#" target="_blank" className="d-flex a-social-icons">
                                 <img src={instaIcon} alt="instagram icon" className="social-icons" />
                             </a>
