@@ -70,10 +70,12 @@ const Main = () => {
                     {teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => (
                         <div key={uuidv4()}>
                             <TeaBlends tea={tea} />
-                            <FaTimes
-                                style={{ color: `#000`, cursor: `pointer` }}
-                                onClick={() => deleteTea(tea)}
-                            />
+                            <div className="d-flex justify-content-end">
+                                <FaTimes
+                                    style={{ color: `#000`, cursor: `pointer` }}
+                                    onClick={() => deleteTea(tea)}
+                                />
+                            </div>
                         </div>
                     ))}
                     </div>

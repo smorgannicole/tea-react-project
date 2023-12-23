@@ -32,6 +32,7 @@ img.header-logo {
 .favTeasCol {
     background-color: #818C6C;
     border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .active-tab {

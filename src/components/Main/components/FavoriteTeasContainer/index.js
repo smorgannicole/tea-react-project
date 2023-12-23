@@ -4,7 +4,7 @@ const FavoriteTeasContainer = () => {
     return (
         <div className="carousel col favTeasCol">
             <div className="inner">
-                <FavoriteTeas/>
+                <FavoriteTeas />
             </div>
         </div>
     );
