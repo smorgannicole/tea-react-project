@@ -41,6 +41,12 @@ const Main = () => {
         localStorage.setItem(`teasData`, JSON.stringify(teas));
     }, [teas]);
 
+    const deleteTea = (teaToDelete) => {
+        const updatedTeas = teas.filter(tea => tea !== teaToDelete);
+        setTeas(updatedTeas);
+        localStorage.setItem(`teasData`, JSON.stringify(updatedTeas));
+    }
+
     return (
         <header className="col-8">
             <div className="row">
@@ -64,7 +70,10 @@ const Main = () => {
                     {teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => (
                         <div key={uuidv4()}>
                             <TeaBlends tea={tea} />
-                            <FaTimes />
+                            <FaTimes
+                                style={{ color: `#000`, cursor: `pointer` }}
+                                onClick={() => deleteTea(tea)}
+                            />
                         </div>
                     ))}
                     </div>
