@@ -11,13 +11,6 @@ const Main = () => {
         setToggleState(index);
     }
 
-    const [teas, setTeas] = useState([]);
-    useEffect(() => {
-        getTeas().then((teas) => {
-            setTeas(teas);
-        });
-    }, []);
-
     const getTeas = async () => {
         const url = `https://boonakitea.cyclic.app/api/all`;
         const options = {
@@ -33,26 +26,26 @@ const Main = () => {
         }
     };
 
-    const addNewTea = (newTea) => {
-        const updatedTeas = [...teas, newTea];
-        setTeas(updatedTeas);
-        localStorage.setItem('teasData', JSON.stringify(updatedTeas));
-    };
+    const [teas, setTeas] = useState(() => {
+        const storedTeas = localStorage.getItem(`teasData`);
+        return storedTeas ? JSON.parse(storedTeas) : [];
+    });
 
+    const addNewTea = (newTea) => {
+        setTeas([...teas, newTea]);
+    };
+    
     useEffect(() => {
-        const storedTeas = JSON.parse(localStorage.getItem('teasData'));
-        if (storedTeas) {
-          setTeas([...storedTeas]);
-        }
-    }, []);
+        localStorage.setItem(`teasData`, JSON.stringify(teas));
+    }, [teas]);
 
     return (
-        <header className='col-8'>
+        <header className="col-8">
             <div className="row">
-                <div className='col-3'>
-                    <img className="header-logo" onClick={() => toggleTab(0)} src={headerLogo} />
+                <div className="col-3">
+                    <img className="header-logo" src={headerLogo} onClick={() => toggleTab(0)} />
                 </div>
-                <nav className='col d-flex align-items-center justify-content-end block-tabs gap-4'>
+                <nav className="col d-flex align-items-center justify-content-end block-tabs gap-4">
                     <div className={toggleState === 0 ? "tab active-tab" : "tab"} onClick={() => toggleTab(0)}>Home</div>
                     <div className={toggleState === 1 ? "tab active-tab" : "tab"} onClick={() => toggleTab(1)}>Tea Blends</div>
                     <div className={toggleState === 2 ? "tab active-tab" : "tab"} onClick={() => toggleTab(2)}>Create Your Own</div>
