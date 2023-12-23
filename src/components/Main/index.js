@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import TeaBlends from "./components/TeaBlends";
 import LeftSideMain from "./components/LeftSideMain";
 import CreateYourOwn from "./components/CreateYourOwn";
+import { v4 as uuidv4 } from 'uuid';
 
 const Main = () => {
 
@@ -59,7 +60,7 @@ const Main = () => {
                 <div className={toggleState === 1 ? "content active-content" : "content"}>
                     <h2>Tea Blends</h2>
                     <div className="col">
-                        {teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => <TeaBlends tea={tea} />)}
+                        {teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => <TeaBlends tea={tea} key={uuidv4()} />)}
                     </div>
                 </div>
                 <div className={toggleState === 2 ? "content active-content" : "content"}>

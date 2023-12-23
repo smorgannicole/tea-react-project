@@ -1,5 +1,6 @@
 const TeaBlends = (props) => {
     const { name, origin, tasteDescription, description, caffeine } = props.tea;
+
     return (
         <div>
             <h3>{name}</h3>
