@@ -14,7 +14,16 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const FavoriteTeas = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const favoriteTeas = [
+    const updateIndex = (newIndex) => {
+        if (newIndex < 0) {
+            newIndex = 0;
+        } else if (newIndex > favoriteTeas.length) {
+            newIndex = favoriteTeas.length - 1;
+        }
+        setActiveIndex(newIndex);
+    }
+
+    const [favoriteTeas, setFavoriteTeas] = useState([
         {
             name: "Matcha Tea",
             image: <img className="fav-tea" src={matchaImg} alt="tea" />,
@@ -39,15 +48,7 @@ const FavoriteTeas = () => {
             name: "English Breakfast Tea",
             image: <img className="fav-tea" src={englishImg} alt="tea" />,
         },
-    ];
-    const updateIndex = (newIndex) => {
-        if (newIndex < 0) {
-            newIndex = 0;
-        } else if (newIndex > favoriteTeas.length) {
-            newIndex = favoriteTeas.length - 1;
-        }
-        setActiveIndex(newIndex);
-    }
+    ]);
 
     return (
         <div className="col">
