@@ -67,18 +67,14 @@ const Main = () => {
                 </div>
                 <div className={toggleState === 1 ? "content active-content" : "content"}>
                     <h2>Tea Blends</h2>
-                    <div className="row">
+                    <div className="row row-gap-2">
                     {teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => (
-                            
-                                <div className="col-6" key={uuidv4()}>
-                                    <div className="d-flex justify-content-end">
-                                        <FaTimes
-                                            style={{ color: `#000`, cursor: `pointer` }}
-                                            onClick={() => deleteTea(tea)}
-                                        />
-                                    </div>
-                                    <TeaBlends tea={tea} />
-                                </div>
+                        <BlendWrapper className="col-4" key={uuidv4()}>
+                            <div className="d-flex justify-content-end d-flex gap-2">
+                                <FaTimes style={{ color: `#A7C0A0`, cursor: `pointer` }} onClick={() => deleteTea(tea)} />
+                            </div>
+                            <TeaBlends tea={tea} />
+                        </BlendWrapper>
                     ))}
                     </div>
                 </div>
@@ -94,6 +90,12 @@ const Main = () => {
         </header>
     );
 }
+
+const BlendWrapper = styled.div`
+    display: flex;
+    border: 1px solid #A7C0A0;
+    border-radius: 10px;
+`;
 
 
 export default Main;
