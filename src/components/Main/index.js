@@ -4,7 +4,8 @@ import TeaBlends from "./components/TeaBlends";
 import LeftSideMain from "./components/LeftSideMain";
 import CreateYourOwn from "./components/CreateYourOwn";
 import { v4 as uuidv4 } from 'uuid';
-import { FaTimes } from 'react-icons/fa'
+import { FaTimes } from 'react-icons/fa';
+import styled from "styled-components";
 
 const Main = () => {
 
@@ -69,13 +70,15 @@ const Main = () => {
                     <div className="col">
                     {teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => (
                         <div key={uuidv4()}>
-                            <TeaBlends tea={tea} />
-                            <div className="d-flex justify-content-end">
-                                <FaTimes
-                                    style={{ color: `#000`, cursor: `pointer` }}
-                                    onClick={() => deleteTea(tea)}
-                                />
-                            </div>
+                            <TeaBlendsContainer>
+                                <TeaBlends tea={tea} />
+                                <div className="d-flex justify-content-end teaBlends">
+                                    <FaTimes
+                                        style={{ color: `#000`, cursor: `pointer` }}
+                                        onClick={() => deleteTea(tea)}
+                                    />
+                                </div>
+                            </TeaBlendsContainer>
                         </div>
                     ))}
                     </div>
@@ -92,5 +95,13 @@ const Main = () => {
         </header>
     );
 }
+
+const TeaBlendsContainer = styled.div`
+	display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    border: 1px solid #000;
+`;
+
 
 export default Main;
