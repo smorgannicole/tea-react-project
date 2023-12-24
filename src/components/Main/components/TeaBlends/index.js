@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 const TeaBlends = (props) => {
     const { name, origin, tasteDescription, description, caffeine } = props.tea;
 

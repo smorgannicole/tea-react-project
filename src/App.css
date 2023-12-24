@@ -69,8 +69,8 @@ img.header-logo {
 
 img.fav-tea {
     border-radius: 8px;
-    aspect-ratio: 300/300;
-    width: 100%;
+    aspect-ratio: 270/270;
+    max-width: 100%;
     object-fit: cover;
 }
 
