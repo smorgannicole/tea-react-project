@@ -67,7 +67,7 @@ const Main = () => {
                 </div>
                 <div className={toggleState === 1 ? "content active-content" : "content"}>
                     <h2>Tea Blends</h2>
-                    <div className="row row-gap-2 gap-3">
+                    <div className="row row-gap-2 gap-2">
                     {teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => (
                         <BlendWrapper className="col-5 d-flex flex-column flex-grow-1" key={uuidv4()}>
                             <div className="d-flex justify-content-end">
@@ -96,6 +96,8 @@ const BlendWrapper = styled.div`
     border: 1px solid #A7C0A0;
     border-radius: 10px;
     padding: 10px;
+    height: 200px;
+    overflow: scroll;
 `;
 
 
