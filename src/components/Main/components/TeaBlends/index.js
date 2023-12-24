@@ -4,19 +4,16 @@ const TeaBlends = (props) => {
     const { name, origin, tasteDescription, description, caffeine } = props.tea;
 
     return (
-        <BlendsContainer>
+        <div className="col-6 d-flex flex-column">
             <h3>{name}</h3>
             <p>{origin}</p>
             <p>{description}</p>
             <p>{tasteDescription}</p>
             <p>{caffeine}</p>
-        </BlendsContainer>
+        </div>
     );
 }
 
-const BlendsContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-`;
+
 
 export default TeaBlends;
