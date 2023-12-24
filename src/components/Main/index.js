@@ -35,7 +35,7 @@ const Main = () => {
     });
 
     const addNewTea = (newTea) => {
-        setTeas([...teas, newTea]);
+        setTeas([newTea, ...teas]);
     };
     
     useEffect(() => {
@@ -71,12 +71,12 @@ const Main = () => {
                     {teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => (
                             
                                 <div className="col-6" key={uuidv4()}>
-                                    {/* <div className="d-flex justify-content-end">
+                                    <div className="d-flex justify-content-end">
                                         <FaTimes
                                             style={{ color: `#000`, cursor: `pointer` }}
                                             onClick={() => deleteTea(tea)}
                                         />
-                                    </div> */}
+                                    </div>
                                     <TeaBlends tea={tea} />
                                 </div>
                     ))}
