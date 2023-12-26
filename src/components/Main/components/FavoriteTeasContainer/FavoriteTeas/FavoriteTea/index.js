@@ -1,6 +1,6 @@
 const FavoriteTea = (props) => {
     return (
-        <div>{props.text}{props.img}</div>
+        <div><span style={{fontWeight: 250,}}>{props.text}</span>{props.img}</div>
     );
 }
 

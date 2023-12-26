@@ -53,6 +53,7 @@ const FavoriteTeas = () => {
     return (
         <div className="col">
             <h2 className="d-flex justify-content-center my-4"><span style={{color: `#fff`, fontWeight: 200,}}>Best Sellers</span></h2>
+            <hr style={{color: `#fff`}}></hr>
             <div id="carouselExample" className="carousel slide">
                 <div className="carousel-inner">
                     {favoriteTeas.map((favoriteTea, index) => (
