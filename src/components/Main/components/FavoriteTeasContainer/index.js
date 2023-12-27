@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FavoriteTeas from "./FavoriteTeas";
+import FavoriteTeas from "./FavoriteTeas"
 
 const FavoriteTeasContainer = () => {
     return (
