@@ -3,7 +3,7 @@ import FavoriteTeas from "./FavoriteTeas"
 
 const FavoriteTeasContainer = () => {
     return (
-        <Wrapper className="col favTeasCol px-3">
+        <Wrapper className="col favTeasCol px-4">
             <WrapperSticky>
                 <div className="carousel">
                     <FavoriteTeas />
