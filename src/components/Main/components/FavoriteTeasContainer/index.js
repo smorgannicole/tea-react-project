@@ -4,22 +4,23 @@ import FavoriteTeas from "./FavoriteTeas";
 const FavoriteTeasContainer = () => {
     return (
         <Wrapper className="col favTeasCol">
-            <div className="carousel">
-                <div className="wrapper">
+            <WrapperSticky>
+                <div className="carousel">
                     <FavoriteTeas />
                 </div>
-            </div>
+            </WrapperSticky>
         </Wrapper>
     );
 }
 
+
 const Wrapper = styled.div`
-position: relative;
-.wrapper {
-    position: sticky;
-    top: 0;
-}
+    position: relative;
 `;
 
+const WrapperSticky = styled.div`
+    position: sticky;
+    top: 0;
+`;
 
 export default FavoriteTeasContainer;
