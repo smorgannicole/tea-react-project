@@ -6,7 +6,7 @@ import oolongImg from "../../images/oolong.png"
 import earlGreyImg from "../../images/earl-grey.png"
 import englishImg from "../../images/english-breakfast.png"
 import instaIcon from "../../images/insta-icon.png"
-import xIcon from "../../images/twitter-icon.png"
+import xIcon from "../../images/twitter-icon.webp"
 import facebookIcon from "../../images/facebook-icon.png"
 import youtubeIcon from "../../images/youtube.icon.png"
 import { useState } from "react";
@@ -52,7 +52,7 @@ const FavoriteTeas = () => {
 
     return (
         <div className="col">
-            <h2 className="d-flex justify-content-center my-4"><span style={{color: `#fff`, fontWeight: 200,}}>Best Sellers</span></h2>
+            <h2 className="d-flex justify-content-center my-2"><span style={{color: `#fff`, fontWeight: 200, marginTop: `20px`}}>Best Sellers</span></h2>
             <hr style={{color: `#fff`}}></hr>
             <div id="carouselExample" className="carousel slide">
                 <div className="carousel-inner">
@@ -83,30 +83,12 @@ const FavoriteTeas = () => {
                 </button>
             </div>
             <div>
-                <hr style={{color:"white"}}></hr>
-                <div className="col d-flex">
-                    <ul className="d-flex">
-                        <li>
-                            <a href="#" target="_blank" className="d-flex a-social-icons">
-                                <img src={instaIcon} alt="instagram icon" className="social-icons" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank" className="d-flex a-social-icons">
-                                <img src={xIcon} alt="x icon" className="social-icons" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank" className="d-flex a-social-icons">
-                                <img src={facebookIcon} alt="facebook icon" className="social-icons" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank" className="d-flex a-social-icons">
-                                <img src={youtubeIcon} alt="youtube icon" className="social-icons" />
-                            </a>
-                        </li>
-                    </ul>
+                <hr style={{color:"white", marginTop: `20px`}}></hr>
+                <div className="col d-flex justify-content-end mb-2 gap-2">
+                    <img src={instaIcon} alt="instagram icon" className="social-icons" />
+                    <img src={xIcon} alt="x icon" className="social-icons" />
+                    <img src={facebookIcon} alt="facebook icon" className="social-icons" />
+                    <img src={youtubeIcon} alt="youtube icon" className="social-icons" />
                 </div>
             </div>
         </div>
