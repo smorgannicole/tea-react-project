@@ -49,7 +49,7 @@ const Main = () => {
     }
 
     return (
-        <header className="col-8 px-4">
+        <header className="col-8 px-5">
             <div className="row">
                 <div className="col-3">
                     <img className="header-logo" src={headerLogo} onClick={() => toggleTab(0)} />
@@ -66,10 +66,11 @@ const Main = () => {
                     <LeftSideMain />
                 </div>
                 <div className={toggleState === 1 ? "content active-content" : "content"}>
-                    <h2>Tea Blends</h2>
-                    <div className="row row-gap-2 gap-2">
+                    <h2><span className="d-flex justify-content-center mt-3">Tea Blends</span></h2>
+                    <hr></hr>
+                    <div className="row row-gap-4 gap-4 mt-5">
                     {teas.length === 0 ? <h1>Loading...</h1> : teas.map((tea) => (
-                        <BlendWrapper className="col-5 d-flex flex-column flex-grow-1" key={uuidv4()}>
+                        <BlendWrapper className="col-3 d-flex flex-column flex-grow-1" key={uuidv4()}>
                             <div className="d-flex justify-content-end">
                                 <FaTimes style={{ color: `#A7C0A0`, cursor: `pointer` }} onClick={() => deleteTea(tea)} />
                             </div>
