@@ -5,9 +5,9 @@ import whiteTeaImg from "../../images/White-tea.png"
 import oolongImg from "../../images/oolong.png"
 import earlGreyImg from "../../images/earl-grey.png"
 import englishImg from "../../images/english-breakfast.png"
-import instaIcon from "../../images/insta-icon.png"
+import instaIcon from "../../images/inst-no-bg.png"
 import xIcon from "../../images/twitter-icon.webp"
-import facebookIcon from "../../images/facebook-icon.png"
+import facebookIcon from "../../images/facebook-icon-white-png.png"
 import youtubeIcon from "../../images/youtube.icon.png"
 import { useState } from "react";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
