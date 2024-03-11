@@ -11,6 +11,7 @@ import facebookIcon from "../../images/facebook-icon-white-png.png"
 import youtubeIcon from "../../images/youtube.icon.png"
 import { useState } from "react";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import drapeLeaf from '../../images/drape-leaf.png'
 
 const FavoriteTeas = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -52,6 +53,7 @@ const FavoriteTeas = () => {
 
     return (
         <div className="col">
+            <img className="drape-leaf-img" src={drapeLeaf} alt="" />
             <h2 className="d-flex justify-content-center my-2"><span style={{color: `#fff`, fontWeight: 200, marginTop: `20px`}}>Best Sellers</span></h2>
             <hr style={{color: `#fff`}}></hr>
             <div id="carouselExample" className="carousel slide">

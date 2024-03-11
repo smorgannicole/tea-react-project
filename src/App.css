@@ -1,5 +1,12 @@
 @import url("~bootstrap/dist/css/bootstrap.min.css") layer(framework);
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
 
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+}
 
 .app-wrapper {
     display: flex;
@@ -7,6 +14,7 @@
     min-height: 100dvh;
     color: #535D3F;
     background-color: #B77960;
+    overflow: hidden;
 }
 
 a {
@@ -15,9 +23,76 @@ a {
 }
 
 img.header-logo {
-    max-height: 70px;
+    max-height: 60px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+.tea-farm-img {
+    max-height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    opacity: 0.7;
+}
+
+.leaves-img {
+    max-height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-340%, 130%);
+    opacity: 0.7;
+}
+
+.ethical-blip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-270%, 0%);
+}
+
+.tea-house {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%, -260%);
+}
+
+.motto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -70%);
+}
+
+.yel-bers-img {
+    max-height: 30vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -200%);
+    opacity: 0.7;
+}
+
+.drape-leaf-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(70%, -115%);
+    opacity: 0.7;
+    z-index: 1;
+    overflow: auto;
+}
+
+.red-ber-img {
+    max-height: 30vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-270%, -200%);
+    opacity: 0.7;
 }
 
 .main-wrapper {
@@ -88,5 +163,24 @@ img.social-icons {
 
 a.a-social-icons {
     justify-content: end;
+}
+
+.add {
+    background-color: #446B6C;
+    color: #fff;
+}
+
+.add:hover {
+    background-color: #818C6C;
+}
+
+.farm-img {
+    max-height: 30dvh;
+    float: left;
+    margin-right: 20px;
+}
+
+.wrap-text {
+    overflow: hidden;
 }
 
