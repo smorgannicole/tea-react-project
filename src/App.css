@@ -28,73 +28,6 @@ img.header-logo {
     margin-top: 10px;
 }
 
-.tea-farm-img {
-    max-height: 60vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-100%, -50%);
-    opacity: 0.7;
-}
-
-.leaves-img {
-    max-height: 60vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-340%, 130%);
-    opacity: 0.7;
-}
-
-.ethical-blip {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-270%, 0%);
-}
-
-.tea-house {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-200%, -260%);
-}
-
-.motto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-45%, -70%);
-}
-
-.yel-bers-img {
-    max-height: 30vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-130%, -200%);
-    opacity: 0.7;
-}
-
-.drape-leaf-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(70%, -115%);
-    opacity: 0.7;
-    z-index: 1;
-    overflow: auto;
-}
-
-.red-ber-img {
-    max-height: 30vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-270%, -200%);
-    opacity: 0.7;
-}
-
 .main-wrapper {
     background-color: #F6F1DB;
     position: relative;
@@ -183,4 +116,339 @@ a.a-social-icons {
 .wrap-text {
     overflow: hidden;
 }
+
+header {
+    position: relative;
+}
+
+.drape-leaf-cont {
+    position: relative;
+}
+
+@media screen and (max-width: 555px) {
+    .tea-farm-img,
+    .leaves-img,
+    .ethical-blip,
+    .tea-house,
+    .motto,
+    .yel-bers-img,
+    .drape-leaf-img,
+    .red-ber-img {
+        max-height: 50vh;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        opacity: 0.7;
+    }
+
+    .app-wrapper {
+        font-size: 0.75rem;
+    }
+
+    .tea-farm-img {
+        left: 55%;
+        top: 50%;
+    }
+
+    .leaves-img {
+        display: none;
+    }
+
+    .ethical-blip {
+        display: none;
+    }
+
+    .tea-house {
+        left: 35%;
+        top: 32%;
+    }
+
+    .favTeasCol {
+        display: none;
+    }
+
+    .leaves-img {
+        display: none;
+    }
+
+    .ethical-blip {
+        display: none;
+    }
+
+    .left-wrapper {
+        min-height: 100dvh;
+        min-width: 100dvw;
+    }
+
+    .navigation {
+        display: block !important;
+    }
+
+    .motto {
+        display: none;
+    }
+
+    .yel-bers-img {
+        display: none;
+    }
+
+    .drape-leaf-img {
+        display: none;
+    }
+
+    .red-ber-img {
+        display: none;
+    }
+
+    .header-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .tea-farm-img,
+    .leaves-img,
+    .ethical-blip,
+    .tea-house,
+    .motto,
+    .yel-bers-img,
+    .drape-leaf-img,
+    .red-ber-img {
+        max-height: 50vh;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        opacity: 0.7;
+    }
+
+    .app-wrapper {
+        font-size: 0.75rem;
+    }
+
+    .tea-farm-img {
+        left: 55%;
+        top: 50%;
+    }
+
+    .leaves-img {
+        display: none;
+    }
+
+    .ethical-blip {
+        display: none;
+    }
+
+    .tea-house {
+        left: 35%;
+        top: 32%;
+    }
+
+    .motto {
+        display: none;
+    }
+
+    .yel-bers-img {
+        display: none;
+    }
+
+    .drape-leaf-img {
+        display: none;
+    }
+
+    .red-ber-img {
+        display: none;
+    }
+
+    .header-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .tea-farm-img,
+    .leaves-img,
+    .ethical-blip,
+    .tea-house,
+    .motto,
+    .yel-bers-img,
+    .drape-leaf-img,
+    .red-ber-img {
+        max-height: 60vh;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        opacity: 0.7;
+    }
+
+    .app-wrapper {
+        font-size: 0.75rem;
+    }
+
+    .tea-farm-img {
+        left: 55%;
+        top: 50%;
+    }
+
+    .leaves-img {
+        max-height: 15vh;
+        left: 7%;
+        top: 92%;
+    }
+
+    .ethical-blip {
+        left: 15%;
+        top: 70%;
+    }
+
+    .tea-house {
+        left: 40%;
+        top: 35%;
+    }
+
+    .motto {
+        left: 80%;
+        top: 50%;
+    }
+
+    .yel-bers-img {
+        max-height: 20vh;
+        left: 60%;
+        top: 10%;
+    }
+
+    .drape-leaf-img {
+        max-height: 20vh;
+        left: 90%;
+        top: 27%;
+        z-index: 1;
+    }
+
+    .red-ber-img {
+        max-height: 15vh;
+        left: 45%;
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .tea-farm-img,
+    .leaves-img,
+    .ethical-blip,
+    .tea-house,
+    .motto,
+    .yel-bers-img,
+    .drape-leaf-img,
+    .red-ber-img {
+        max-height: 60vh;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        opacity: 0.7;
+    }
+
+    .app-wrapper {
+        font-size: 1rem;
+    }
+
+    .tea-farm-img {
+        left: 55%;
+        top: 50%;
+    }
+
+    .leaves-img {
+        left: 7%;
+        top: 92%;
+    }
+
+    .ethical-blip {
+        left: 13%;
+        top: 70%;
+    }
+
+    .tea-house {
+        left: 45%;
+        top: 35%;
+    }
+
+    .motto {
+        left: 77%;
+        top: 47%;
+    }
+
+    .yel-bers-img {
+        max-height: 30vh;
+        left: 65%;
+        top: 10%;
+    }
+
+    .drape-leaf-img {
+        left: 90%;
+        top: 24.5%;
+        z-index: 1;
+    }
+
+    .red-ber-img {
+        max-height: 30vh;
+        left: 45%;
+        top: 25%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .tea-farm-img,
+    .leaves-img,
+    .ethical-blip,
+    .tea-house,
+    .motto,
+    .yel-bers-img,
+    .drape-leaf-img,
+    .red-ber-img {
+        max-height: 60vh;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        opacity: 0.7;
+    }
+
+    .app-wrapper {
+        font-size: 1.5rem;
+    }
+    
+    .drape-leaf-img {
+        display: none;
+    }
+
+    .ethical-blip {
+        left: 13%;
+        top: 70%;
+    }
+
+    .motto {
+        left: 79%;
+        top: 52%;
+    }
+
+    .red-ber-img {
+        max-height: 30vh;
+        left: 45%;
+        top: 25%;
+    }
+
+    .yel-bers-img {
+        max-height: 30vh;
+        left: 65%;
+        top: 10%;
+    }
+
+    .tea-house {
+        left: 45%;
+        top: 35%;
+    }
+
+    .tea-farm-img {
+        left: 55%;
+        top: 50%;
+    }
+
+    .leaves-img {
+        left: 7%;
+        top: 92%;
+    }
+}
+
 

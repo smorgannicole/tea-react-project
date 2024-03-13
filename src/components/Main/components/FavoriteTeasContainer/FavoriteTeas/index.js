@@ -52,7 +52,7 @@ const FavoriteTeas = () => {
     ]);
 
     return (
-        <div className="col">
+        <div className="col drape-leaf-cont">
             <img className="drape-leaf-img" src={drapeLeaf} alt="" />
             <h2 className="d-flex justify-content-center my-2"><span style={{color: `#fff`, fontWeight: 200, marginTop: `20px`}}>Best Sellers</span></h2>
             <hr style={{color: `#fff`}}></hr>

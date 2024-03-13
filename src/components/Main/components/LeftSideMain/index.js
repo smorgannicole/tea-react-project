@@ -5,7 +5,7 @@ import redBerry from '../images/red-berry.png'
 
 const LeftSideMain = () => {
     return (
-        <div className="col-8">
+        <div className="col-8 left-wrapper">
             <h2 className='tea-house'>TEA HOUSE</h2>
             <img className='tea-farm-img' src={teaFarm} alt="" />
             <p className='motto'>Steeped in<br/> tradition, sipped <br/>with delight:<br/> discover your<br/> perfect blend</p>
