@@ -1,454 +1,455 @@
 @import url("~bootstrap/dist/css/bootstrap.min.css") layer(framework);
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap");
 
 body {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 20px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
 }
 
 .app-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100dvh;
-    color: #535D3F;
-    background-color: #B77960;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  color: #535d3f;
+  background-color: #b77960;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img.header-logo {
-    max-height: 60px;
-    cursor: pointer;
-    margin-top: 10px;
+  max-height: 60px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .main-wrapper {
-    background-color: #F6F1DB;
-    position: relative;
-    height: 100%;
-    width: 95%;
-    margin: 5vh auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3), 8px 0 8px -3px rgba(0, 0, 0, 0.3), 0 -4px 8px -3px rgba(0, 0, 0, 0.3), -8px 0 8px -3px rgba(0, 0, 0, 0.3);
+  background-color: #f6f1db;
+  position: relative;
+  height: 100%;
+  width: 95%;
+  margin: 5vh auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3),
+    8px 0 8px -3px rgba(0, 0, 0, 0.3), 0 -4px 8px -3px rgba(0, 0, 0, 0.3),
+    -8px 0 8px -3px rgba(0, 0, 0, 0.3);
 }
 
 .favTeasCol {
-    background-color: #818C6C;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+  background-color: #818c6c;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .active-tab {
-    background-color: #F6F1DB;
-    cursor: pointer;
+  background-color: #f6f1db;
+  cursor: pointer;
 }
 
 .active-tab::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% + 2px);
-    height: 5px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
 }
 
 .tab {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .content {
-    display: none;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-    background-color: #F6F1DB;
+  display: none;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: #f6f1db;
 }
 
 .active-content {
-    display: block;
+  display: block;
 }
 
 img.fav-tea {
-    border-radius: 8px;
-    aspect-ratio: 270/270;
-    max-width: 100%;
-    object-fit: cover;
+  border-radius: 8px;
+  aspect-ratio: 270/270;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 img.social-icons {
-    max-height: 20px;
-    cursor: pointer;
-    flex-shrink: 1;
-    flex-grow: 0;
+  max-height: 20px;
+  cursor: pointer;
+  flex-shrink: 1;
+  flex-grow: 0;
 }
 
 a.a-social-icons {
-    justify-content: end;
+  justify-content: end;
 }
 
 .add {
-    background-color: #446B6C;
-    color: #fff;
+  background-color: #446b6c;
+  color: #fff;
 }
 
 .add:hover {
-    background-color: #818C6C;
+  background-color: #818c6c;
 }
 
 .farm-img {
-    max-height: 30dvh;
-    float: left;
-    margin-right: 20px;
+  max-height: 30dvh;
+  float: left;
+  margin-right: 20px;
 }
 
 .wrap-text {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 header {
-    position: relative;
+  position: relative;
 }
 
 .drape-leaf-cont {
-    position: relative;
+  position: relative;
 }
 
 @media screen and (max-width: 555px) {
-    .tea-farm-img,
-    .leaves-img,
-    .ethical-blip,
-    .tea-house,
-    .motto,
-    .yel-bers-img,
-    .drape-leaf-img,
-    .red-ber-img {
-        max-height: 50vh;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        opacity: 0.7;
-    }
+  .tea-farm-img,
+  .leaves-img,
+  .ethical-blip,
+  .tea-house,
+  .motto,
+  .yel-bers-img,
+  .drape-leaf-img,
+  .red-ber-img {
+    max-height: 50vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+  }
 
-    .app-wrapper {
-        font-size: 0.75rem;
-    }
+  .app-wrapper {
+    font-size: 0.75rem;
+  }
 
-    .tea-farm-img {
-        left: 55%;
-        top: 50%;
-    }
+  .tea-farm-img {
+    left: 55%;
+    top: 50%;
+  }
 
-    .leaves-img {
-        display: none;
-    }
+  .leaves-img {
+    display: none;
+  }
 
-    .ethical-blip {
-        display: none;
-    }
+  .ethical-blip {
+    display: none;
+  }
 
-    .tea-house {
-        left: 35%;
-        top: 32%;
-    }
+  .tea-house {
+    left: 35%;
+    top: 32%;
+  }
 
-    .favTeasCol {
-        display: none;
-    }
+  .favTeasCol {
+    display: none;
+  }
 
-    .leaves-img {
-        display: none;
-    }
+  .leaves-img {
+    display: none;
+  }
 
-    .ethical-blip {
-        display: none;
-    }
+  .ethical-blip {
+    display: none;
+  }
 
-    .left-wrapper {
-        min-height: 100dvh;
-        min-width: 100dvw;
-    }
+  .left-wrapper {
+    min-height: 100dvh;
+    min-width: 100dvw;
+  }
 
-    .navigation {
-        display: block !important;
-    }
+  .navigation {
+    display: block !important;
+  }
 
-    .motto {
-        display: none;
-    }
+  .motto {
+    display: none;
+  }
 
-    .yel-bers-img {
-        display: none;
-    }
+  .yel-bers-img {
+    display: none;
+  }
 
-    .drape-leaf-img {
-        display: none;
-    }
+  .drape-leaf-img {
+    display: none;
+  }
 
-    .red-ber-img {
-        display: none;
-    }
+  .red-ber-img {
+    display: none;
+  }
 
-    .header-logo {
-        display: none;
-    }
+  .header-logo {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .tea-farm-img,
-    .leaves-img,
-    .ethical-blip,
-    .tea-house,
-    .motto,
-    .yel-bers-img,
-    .drape-leaf-img,
-    .red-ber-img {
-        max-height: 50vh;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        opacity: 0.7;
-    }
+  .tea-farm-img,
+  .leaves-img,
+  .ethical-blip,
+  .tea-house,
+  .motto,
+  .yel-bers-img,
+  .drape-leaf-img,
+  .red-ber-img {
+    max-height: 50vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+  }
 
-    .app-wrapper {
-        font-size: 0.75rem;
-    }
+  .app-wrapper {
+    font-size: 0.75rem;
+  }
 
-    .tea-farm-img {
-        left: 55%;
-        top: 50%;
-    }
+  .tea-farm-img {
+    left: 55%;
+    top: 50%;
+  }
 
-    .leaves-img {
-        display: none;
-    }
+  .leaves-img {
+    display: none;
+  }
 
-    .ethical-blip {
-        display: none;
-    }
+  .ethical-blip {
+    display: none;
+  }
 
-    .tea-house {
-        left: 35%;
-        top: 32%;
-    }
+  .tea-house {
+    left: 35%;
+    top: 32%;
+  }
 
-    .motto {
-        display: none;
-    }
+  .motto {
+    display: none;
+  }
 
-    .yel-bers-img {
-        display: none;
-    }
+  .yel-bers-img {
+    display: none;
+  }
 
-    .drape-leaf-img {
-        display: none;
-    }
+  .drape-leaf-img {
+    display: none;
+  }
 
-    .red-ber-img {
-        display: none;
-    }
+  .red-ber-img {
+    display: none;
+  }
 
-    .header-logo {
-        display: none;
-    }
+  .header-logo {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1300px) {
-    .tea-farm-img,
-    .leaves-img,
-    .ethical-blip,
-    .tea-house,
-    .motto,
-    .yel-bers-img,
-    .drape-leaf-img,
-    .red-ber-img {
-        max-height: 60vh;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        opacity: 0.7;
-    }
+  .tea-farm-img,
+  .leaves-img,
+  .ethical-blip,
+  .tea-house,
+  .motto,
+  .yel-bers-img,
+  .drape-leaf-img,
+  .red-ber-img {
+    max-height: 60vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+  }
 
-    .app-wrapper {
-        font-size: 0.75rem;
-    }
+  .app-wrapper {
+    font-size: 0.75rem;
+  }
 
-    .tea-farm-img {
-        left: 55%;
-        top: 50%;
-    }
+  .tea-farm-img {
+    left: 55%;
+    top: 50%;
+  }
 
-    .leaves-img {
-        max-height: 15vh;
-        left: 7%;
-        top: 92%;
-    }
+  .leaves-img {
+    max-height: 15vh;
+    left: 7%;
+    top: 92%;
+  }
 
-    .ethical-blip {
-        left: 15%;
-        top: 70%;
-    }
+  .ethical-blip {
+    left: 15%;
+    top: 70%;
+  }
 
-    .tea-house {
-        left: 40%;
-        top: 35%;
-    }
+  .tea-house {
+    left: 40%;
+    top: 35%;
+  }
 
-    .motto {
-        left: 80%;
-        top: 50%;
-    }
+  .motto {
+    left: 80%;
+    top: 50%;
+  }
 
-    .yel-bers-img {
-        max-height: 20vh;
-        left: 60%;
-        top: 10%;
-    }
+  .yel-bers-img {
+    max-height: 20vh;
+    left: 60%;
+    top: 10%;
+  }
 
-    .drape-leaf-img {
-        max-height: 20vh;
-        left: 90%;
-        top: 27%;
-        z-index: 1;
-    }
+  .drape-leaf-img {
+    max-height: 20vh;
+    left: 90%;
+    top: 27%;
+    z-index: 1;
+  }
 
-    .red-ber-img {
-        max-height: 15vh;
-        left: 45%;
-        top: 25%;
-    }
+  .red-ber-img {
+    max-height: 15vh;
+    left: 45%;
+    top: 25%;
+  }
 }
 
 @media screen and (max-width: 1800px) {
-    .tea-farm-img,
-    .leaves-img,
-    .ethical-blip,
-    .tea-house,
-    .motto,
-    .yel-bers-img,
-    .drape-leaf-img,
-    .red-ber-img {
-        max-height: 60vh;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        opacity: 0.7;
-    }
+  .tea-farm-img,
+  .leaves-img,
+  .ethical-blip,
+  .tea-house,
+  .motto,
+  .yel-bers-img,
+  .drape-leaf-img,
+  .red-ber-img {
+    max-height: 60vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+  }
 
-    .app-wrapper {
-        font-size: 1rem;
-    }
+  .app-wrapper {
+    font-size: 1rem;
+  }
 
-    .tea-farm-img {
-        left: 55%;
-        top: 50%;
-    }
+  .tea-farm-img {
+    left: 55%;
+    top: 50%;
+  }
 
-    .leaves-img {
-        left: 7%;
-        top: 92%;
-    }
+  .leaves-img {
+    left: 7%;
+    top: 92%;
+  }
 
-    .ethical-blip {
-        left: 13%;
-        top: 70%;
-    }
+  .ethical-blip {
+    left: 13%;
+    top: 70%;
+  }
 
-    .tea-house {
-        left: 45%;
-        top: 35%;
-    }
+  .tea-house {
+    left: 45%;
+    top: 35%;
+  }
 
-    .motto {
-        left: 77%;
-        top: 47%;
-    }
+  .motto {
+    left: 77%;
+    top: 47%;
+  }
 
-    .yel-bers-img {
-        max-height: 30vh;
-        left: 65%;
-        top: 10%;
-    }
+  .yel-bers-img {
+    max-height: 30vh;
+    left: 65%;
+    top: 10%;
+  }
 
-    .drape-leaf-img {
-        left: 90%;
-        top: 24.5%;
-        z-index: 1;
-    }
+  .drape-leaf-img {
+    left: 90%;
+    top: 24.5%;
+    z-index: 1;
+  }
 
-    .red-ber-img {
-        max-height: 30vh;
-        left: 45%;
-        top: 25%;
-    }
+  .red-ber-img {
+    max-height: 30vh;
+    left: 45%;
+    top: 25%;
+  }
 }
 
 @media screen and (min-width: 1800px) {
-    .tea-farm-img,
-    .leaves-img,
-    .ethical-blip,
-    .tea-house,
-    .motto,
-    .yel-bers-img,
-    .drape-leaf-img,
-    .red-ber-img {
-        max-height: 60vh;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        opacity: 0.7;
-    }
+  .tea-farm-img,
+  .leaves-img,
+  .ethical-blip,
+  .tea-house,
+  .motto,
+  .yel-bers-img,
+  .drape-leaf-img,
+  .red-ber-img {
+    max-height: 60vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+  }
 
-    .app-wrapper {
-        font-size: 1.5rem;
-    }
-    
-    .drape-leaf-img {
-        display: none;
-    }
+  .app-wrapper {
+    font-size: 1.5rem;
+  }
 
-    .ethical-blip {
-        left: 13%;
-        top: 70%;
-    }
+  .drape-leaf-img {
+    display: none;
+  }
 
-    .motto {
-        left: 79%;
-        top: 52%;
-    }
+  .ethical-blip {
+    left: 13%;
+    top: 70%;
+  }
 
-    .red-ber-img {
-        max-height: 30vh;
-        left: 45%;
-        top: 25%;
-    }
+  .motto {
+    left: 79%;
+    top: 52%;
+  }
 
-    .yel-bers-img {
-        max-height: 30vh;
-        left: 65%;
-        top: 10%;
-    }
+  .red-ber-img {
+    max-height: 30vh;
+    left: 45%;
+    top: 25%;
+  }
 
-    .tea-house {
-        left: 45%;
-        top: 35%;
-    }
+  .yel-bers-img {
+    max-height: 30vh;
+    left: 65%;
+    top: 10%;
+  }
 
-    .tea-farm-img {
-        left: 55%;
-        top: 50%;
-    }
+  .tea-house {
+    left: 45%;
+    top: 35%;
+  }
 
-    .leaves-img {
-        left: 7%;
-        top: 92%;
-    }
+  .tea-farm-img {
+    left: 55%;
+    top: 50%;
+  }
+
+  .leaves-img {
+    left: 7%;
+    top: 92%;
+  }
 }
-
-
